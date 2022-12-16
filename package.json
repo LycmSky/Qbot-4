@@ -1,0 +1,24 @@
+{
+  "name": "qbot-4",
+  "version": "4.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node ./src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LycmSky/Qbot-4.git"
+  },
+  "author": "lycm",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LycmSky/Qbot-4/issues"
+  },
+  "homepage": "https://github.com/LycmSky/Qbot-4#readme",
+  "dependencies": {
+    "nodemailer": "^6.8.0",
+    "oicq": "^2.3.1"
+  }
+}
