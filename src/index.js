@@ -44,7 +44,8 @@ bot.on("system.login.qrcode", function() { // 监听收到二维码的事件
 exports.bot = bot
 
 // template plugins
-require("./plugin/hello") //hello world
+require("./plugin/hello") // hello world
+require("./plugin/echo") // 复读机
 
 process.on("unhandledRejection", (reason, promise) => {
 	console.log('Unhandled Rejection at:', promise, 'reason:', reason)

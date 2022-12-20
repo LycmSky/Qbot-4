@@ -4,8 +4,8 @@ const { bot } = require("../index")
 
 // hello world
 bot.on("message", function (msg) {
-	if (msg.raw_message === "hello")
-		msg.reply("hello world", true) //改为false则不会引用
+	if (msg.raw_message === "消灭人类暴政")
+		msg.reply("世界属于三体", false) //改为false则不会引用
 })
 
 // 撤回和发送群消息
