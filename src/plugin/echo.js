@@ -10,20 +10,21 @@
 const { segment } = require("oicq")
 const { bot } = require("../index")
 const schedule = require('node-schedule')
+const comander = require('../comander')
 
 const groupId = 278836530
 const message = ""
 
 bot.on("message", function (msg) {
-
-	if (msg.raw_message === ".echo")
+  if (args=comander.filter(msg.raw_message, ".echo")) {
 		msg.reply("123456", false) //改为false则不会引用
+  }
 })
 
-const  scheduleCronstyle = ()=>{
-      schedule.scheduleJob('*/120 * * * * *',()=>{
-        bot.sendGroupMsg(groupId, message)
-        }); 
-    }
+// const  scheduleCronstyle = ()=>{
+//       schedule.scheduleJob('*/120 * * * * *',()=>{
+//         bot.sendGroupMsg(groupId, message)
+//         }); 
+//     }
   
-scheduleCronstyle();
+// scheduleCronstyle();

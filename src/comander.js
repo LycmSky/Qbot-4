@@ -1,5 +1,5 @@
 function filter(message, str) {
-    if (message.indexOf(str+" -")===0) {return message.replace(str, "")} else {return false}
+    if (message.indexOf(str)===0) {return message.replace(str, "")} else {return false}
 }
 
 function parse(message) {
@@ -17,3 +17,7 @@ function parse(message) {
     return response
 }
 
+module.exports = {
+    filter,
+    parse
+}
